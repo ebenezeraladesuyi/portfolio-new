@@ -8,10 +8,6 @@ const Services = () => {
       <h4>What I Do?</h4>
       <Hold>
         <Card
-          title="UI/UX"
-          desc=" I use tools like Figma to create wireframes and interactive prototypes, allowing me to visualize and iterate on the design before starting the development phase. I have an eye to create appealing user interface."
-        />
-        <Card
           title="Full Stack Development"
           desc=" Harness the power of (MongoDB, Express.js, React.js, and Node.js) to build scalable and efficient web applications. From concept to execution, I cover every stage of development with utmost  creativity."
         />
@@ -33,6 +29,10 @@ const Services = () => {
           title="API Development"
           desc=" Enable seamless communication between your frontend and backend with robust RESTful APIs. I design and implement APIs that facilitate smooth data flow and integration with other services."
         />
+        <Card
+          title="UI/UX"
+          desc=" I use tools like Figma to create wireframes and interactive prototypes, allowing me to visualize and iterate on the design before starting the development phase. I have an eye to create appealing user interface."
+        />
       </Hold>
     </Container>
   );
@@ -49,6 +49,7 @@ const Hold = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 `;
 
 const Container = styled.div`

@@ -1,5 +1,5 @@
 import { Header } from "./Blocks";
-import { About, Hero, Services } from "./Components";
+import { About, Hero, Portfolio, Services } from "./Components";
 
 const App = () => {
   return (
@@ -8,6 +8,7 @@ const App = () => {
       <Hero />
       <About />
       <Services />
+      <Portfolio />
     </div>
   );
 };

@@ -73,6 +73,7 @@ const Right = styled.div`
   nav {
     font-size: 17px;
     margin: 10px;
+    cursor: pointer;
   }
 `;
 
