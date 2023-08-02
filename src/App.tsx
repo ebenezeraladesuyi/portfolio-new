@@ -1,5 +1,12 @@
-import { Header } from "./Blocks";
-import { About, Hero, Portfolio, Services } from "./Components";
+import { Footer, Header } from "./Blocks";
+import {
+  About,
+  Contact,
+  Hero,
+  Intrested,
+  Portfolio,
+  Services,
+} from "./Components";
 
 const App = () => {
   return (
@@ -9,6 +16,9 @@ const App = () => {
       <About />
       <Services />
       <Portfolio />
+      <Contact />
+      <Intrested />
+      <Footer />
     </div>
   );
 };
