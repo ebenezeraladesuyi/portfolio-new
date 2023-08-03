@@ -30,8 +30,8 @@ const Circle = () => {
 export default Circle;
 
 const Container = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   cursor: pointer;
   background-color: #827ae0;
   border-radius: 50%;
@@ -40,7 +40,19 @@ const Container = styled.div`
   align-items: center;
   color: white;
   position: fixed;
-  right: 15px;
+  right: 0px;
   top: 87%;
   z-index: 20;
+  animation: bounce 2s infinite;
+  margin-left: 40px;
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+      transform: translate(-50%, -50%) translateY(-30px);
+    }
+  }
 `;
