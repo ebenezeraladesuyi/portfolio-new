@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Contact = () => {
   return (
-    <Container>
+    <Container id="contact">
       <h2>Contact</h2>
       <h4>Reach Me...</h4>
       <Holder>

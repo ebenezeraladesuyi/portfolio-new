@@ -3,7 +3,7 @@ import pix from "../assets/Finbarr.jpg";
 
 const About = () => {
   return (
-    <Container>
+    <Container id="about">
       <Left>
         <ImgHold>
           <img src={pix} alt="" />

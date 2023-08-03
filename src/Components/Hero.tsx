@@ -11,7 +11,7 @@ const Hero = () => {
     saveAs(fileURL, filename);
   };
   return (
-    <Container>
+    <Container id="home">
       <Wrapper>
         <Left>
           <h1>

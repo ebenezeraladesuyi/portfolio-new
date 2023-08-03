@@ -7,7 +7,7 @@ import todo from "../assets/todo.jpg";
 
 const Portfolio = () => {
   return (
-    <Container>
+    <Container id="portfolio">
       <h2>Portfolio</h2>
       <h4>Awesome Works</h4>
       <Holding>

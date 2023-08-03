@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const Header: React.FC = () => {
   const [change, setChange] = useState<boolean>(false);
@@ -27,11 +28,21 @@ const Header: React.FC = () => {
               </h2>
             </Left>
             <Right>
-              <nav>Home</nav>
-              <nav>About</nav>
-              <nav>Services</nav>
-              <nav>Portfolio</nav>
-              <nav>Contact</nav>
+              <Link to="home" duration={500} smooth={true} offset={-50}>
+                <nav>Home</nav>
+              </Link>
+              <Link to="about" duration={500} smooth={true} offset={-50}>
+                <nav>About</nav>
+              </Link>
+              <Link to="services" duration={500} smooth={true} offset={-50}>
+                <nav>Services</nav>
+              </Link>
+              <Link to="portfolio" duration={500} smooth={true} offset={-50}>
+                <nav>Portfolio</nav>
+              </Link>
+              <Link to="contact" duration={500} smooth={true} offset={-50}>
+                <nav>Contact</nav>
+              </Link>
             </Right>
           </Wrapper>
         </Container>
@@ -45,11 +56,21 @@ const Header: React.FC = () => {
               </h2>
             </Left>
             <Right>
-              <nav>Home</nav>
-              <nav>About</nav>
-              <nav>Services</nav>
-              <nav>Portfolio</nav>
-              <nav>Contact</nav>
+              <Link to="home" duration={500} smooth={true} offset={-50}>
+                <nav>Home</nav>
+              </Link>
+              <Link to="about" duration={500} smooth={true} offset={-50}>
+                <nav>About</nav>
+              </Link>
+              <Link to="services" duration={500} smooth={true} offset={-50}>
+                <nav>Services</nav>
+              </Link>
+              <Link to="portfolio" duration={500} smooth={true} offset={-50}>
+                <nav>Portfolio</nav>
+              </Link>
+              <Link to="contact" duration={500} smooth={true} offset={-50}>
+                <nav>Contact</nav>
+              </Link>
             </Right>
           </Wrapper>
         </Container>

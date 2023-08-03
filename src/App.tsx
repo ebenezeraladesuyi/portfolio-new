@@ -7,11 +7,13 @@ import {
   Portfolio,
   Services,
 } from "./Components";
+import Circle from "./common/Circle";
 
 const App = () => {
   return (
     <div>
       <Header />
+      <Circle />
       <Hero />
       <About />
       <Services />
