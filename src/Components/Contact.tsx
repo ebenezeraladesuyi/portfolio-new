@@ -1,6 +1,31 @@
 import styled from "styled-components";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+import { AiFillWarning } from "react-icons/ai";
 
 const Contact = () => {
+  const schema = yup
+    .object({
+      name: yup.string().required(),
+      email: yup.string().required().email(),
+      subject: yup.string(),
+      message: yup.string().required(),
+    })
+    .required();
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
+
+  const Submit = handleSubmit(async (res: any) => {
+    console.log(res);
+  });
+
   return (
     <Container id="contact">
       <h2>Contact</h2>
@@ -14,16 +39,64 @@ const Contact = () => {
           <h6>ogbonnafinbarr@gmail.com</h6>
           <h6>+234 80 875 1413</h6>
         </Left>
-        <Right>
+        <Right onSubmit={Submit}>
           <Card>
             <InpHold>
-              <input type="text" placeholder="Input name" />
-              <input type="text" placeholder="Input email" />
+              <Holding>
+                <input
+                  type="text"
+                  placeholder="Input name"
+                  {...register("name")}
+                  style={{ width: "100%" }}
+                />
+                <p>
+                  {errors?.name?.message ? (
+                    <AiFillWarning
+                      style={{ color: "red", marginRight: "6px" }}
+                    />
+                  ) : null}
+                  {errors?.name?.message}
+                  {errors?.name?.message ? "!!!" : null}
+                </p>
+              </Holding>
+              <Holding>
+                <input
+                  type="text"
+                  placeholder="Input email"
+                  {...register("email")}
+                  style={{ width: "100%" }}
+                />
+                <p>
+                  {errors?.email?.message ? (
+                    <AiFillWarning
+                      style={{ color: "red", marginRight: "6px" }}
+                    />
+                  ) : null}
+                  {errors?.email?.message}
+                  {errors?.email?.message ? "!!!" : null}
+                </p>
+              </Holding>
             </InpHold>
-            <Input type="text" placeholder="Subject (Optional)" />
-            <textarea placeholder="Message..."></textarea>
+            <Input
+              type="text"
+              placeholder="Subject (Optional)"
+              {...register("subject")}
+            />
+            <textarea
+              placeholder="Message..."
+              {...register("message")}
+            ></textarea>
+            <Sec>
+              <p>
+                {errors?.message?.message ? (
+                  <AiFillWarning style={{ color: "red", marginRight: "6px" }} />
+                ) : null}
+                {errors?.message?.message}
+                {errors?.message?.message ? "!!!" : null}
+              </p>
+            </Sec>
             <Buthold>
-              <button>Contact Me</button>
+              <button type="submit">Contact Me</button>
             </Buthold>
           </Card>
         </Right>
@@ -34,8 +107,36 @@ const Contact = () => {
 
 export default Contact;
 
+const Sec = styled.div`
+  display: flex;
+  width: 90%;
+
+  p {
+    font-size: 13px;
+    color: red;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-top: 9px;
+  }
+`;
+
+const Holding = styled.div`
+  width: 44%;
+
+  p {
+    font-size: 13px;
+    color: red;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+  }
+`;
+
 const Buthold = styled.div`
   width: 90%;
+  margin-top: 20px;
 
   button {
     width: 120px;
@@ -45,7 +146,7 @@ const Buthold = styled.div`
     color: white;
     border: none;
     background-color: #827ae0;
-    margin-top: 20px;
+    cursor: pointer;
   }
 `;
 
@@ -119,7 +220,7 @@ const Holder = styled.div`
   }
 `;
 
-const Right = styled.div``;
+const Right = styled.form``;
 const Left = styled.div`
   p {
     margin: 0;
@@ -136,7 +237,7 @@ const Left = styled.div`
 
 const Container = styled.div`
   width: 100%;
-  height: 600px;
+  height: 680px;
   display: flex;
   align-items: center;
   /* justify-content: center; */
@@ -159,7 +260,7 @@ const Container = styled.div`
 
   h4 {
     position: absolute;
-    top: 15%;
+    top: 11%;
     margin-left: 20px;
     font-size: 39px;
     margin: 0;
