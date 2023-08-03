@@ -13,8 +13,8 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Circle />
       <Hero />
+      <Circle />
       <About />
       <Services />
       <Portfolio />
