@@ -260,7 +260,7 @@ const Container = styled.div`
 
   h4 {
     position: absolute;
-    top: 11%;
+    top: 13%;
     margin-left: 20px;
     font-size: 39px;
     margin: 0;

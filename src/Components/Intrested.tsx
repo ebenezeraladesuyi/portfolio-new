@@ -9,7 +9,13 @@ const Intrested = () => {
           Challenge me before wasting your valuable time. I want to work with
           you to create the really cool stuff.
         </p>
-        <button>Let's Talk</button>
+        <a
+          href="https://wa.me/2348087514113"
+          style={{ color: "white", textDecoration: "none" }}
+        >
+          {" "}
+          <button>Let's Talk</button>
+        </a>
       </Wrapper>
     </Container>
   );

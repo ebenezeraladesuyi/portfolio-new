@@ -33,7 +33,7 @@ const Hero = () => {
           <Button onClick={handleDownload}>Download cv</Button>
         </Left>
         <Right>
-          <img src={pics} alt="" />
+          <img src={pics} alt="Finbarr's Image" />
         </Right>
       </Wrapper>
     </Container>
@@ -45,7 +45,7 @@ export default Hero;
 const Right = styled.div`
   width: 450px;
   height: 480px;
-  background-color: gold;
+  /* background-color: gold; */
   margin-left: 50px;
   margin-bottom: 90px;
   margin-top: 30px;

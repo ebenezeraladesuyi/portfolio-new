@@ -7,9 +7,15 @@ const Footer = () => {
   return (
     <Container>
       <Hold>
-        <AiFillGithub size={25} style={{ marginRight: "20px" }} />
-        <AiFillLinkedin size={25} style={{ marginRight: "20px" }} />
-        <BsFacebook size={25} />
+        <a href="https://github.com/Finbarr12">
+          <AiFillGithub size={25} style={{ marginRight: "20px" }} />
+        </a>
+        <a href="https://www.linkedin.com/in/finbarr-ihechukwu-661523253/">
+          <AiFillLinkedin size={25} style={{ marginRight: "20px" }} />
+        </a>
+        <a href="https://www.facebook.com/finbizz.davinci">
+          <BsFacebook size={25} />
+        </a>
       </Hold>
       <p>
         {" "}
@@ -24,6 +30,11 @@ export default Footer;
 const Hold = styled.div`
   display: flex;
   margin-bottom: 15px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 `;
 
 const Container = styled.div`
