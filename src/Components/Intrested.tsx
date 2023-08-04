@@ -38,7 +38,7 @@ const Wrapper = styled.div`
     margin: 0;
     font-size: 40px;
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 500px) {
       font-size: 30px;
       width: 300px;
       text-align: center;
@@ -59,7 +59,7 @@ const Wrapper = styled.div`
     font-size: 20px;
     text-align: center;
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 500px) {
       width: 300px;
       font-size: 16px;
     }

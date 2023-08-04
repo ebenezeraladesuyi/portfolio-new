@@ -47,8 +47,11 @@ const Container = styled.div`
     font-size: 17px;
     color: darkgray;
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 500px) {
       width: 350px;
+    }
+    @media screen and (min-width: 700px) and (max-width: 1000px) {
+      width: 700px;
     }
   }
 `;
