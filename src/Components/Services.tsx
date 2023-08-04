@@ -50,6 +50,15 @@ const Hold = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 700px) and (max-width: 1000px) {
+    justify-content: normal;
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1000px) {
+    justify-content: space-between;
+    /* width: 38%; */
+  }
 `;
 
 const Container = styled.div`
@@ -69,6 +78,10 @@ const Container = styled.div`
     text-transform: uppercase;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+
+    @media screen and (max-width: 900px) {
+      font-size: 80px;
+    }
   }
 
   h4 {
@@ -77,5 +90,9 @@ const Container = styled.div`
     margin-left: 20px;
     font-size: 39px;
     margin: 0;
+
+    @media screen and (max-width: 900px) {
+      top: 1.3%;
+    }
   }
 `;

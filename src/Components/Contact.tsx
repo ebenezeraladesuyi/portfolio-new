@@ -122,7 +122,22 @@ const Sec = styled.div`
 `;
 
 const Holding = styled.div`
-  width: 44%;
+  width: 46%;
+  margin-bottom: 10px;
+  margin-right: 20px;
+
+  @media screen and (max-width: 900px) {
+    width: 95%;
+  }
+  input {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #f5f5f5;
+    outline: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding-left: 7px;
+  }
 
   p {
     font-size: 13px;
@@ -159,6 +174,12 @@ const Input = styled.input`
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   padding-left: 10px;
   margin-top: 20px;
+
+  @media screen and (max-width: 900px) {
+    width: 95%;
+    /* margin-top: 10px; */
+    margin: 0;
+  }
 `;
 
 const InpHold = styled.div`
@@ -166,15 +187,12 @@ const InpHold = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
+  /* background-color: gold; */
+  align-items: center;
 
-  input {
-    width: 44%;
-    height: 38px;
-    border: 1px solid #f5f5f5;
-    outline: none;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    padding-left: 10px;
+  @media screen and (max-width: 900px) {
+    display: block;
+    width: 100%;
   }
 `;
 
@@ -187,6 +205,12 @@ const Card = styled.div`
   /* justify-content: center; */
   flex-direction: column;
 
+  @media screen and (max-width: 900px) {
+    align-items: normal;
+    width: 100%;
+    margin-top: 40px;
+  }
+
   textarea {
     resize: none;
     width: 88%;
@@ -197,6 +221,11 @@ const Card = styled.div`
       rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     padding-left: 10px;
     margin-top: 20px;
+
+    @media screen and (max-width: 900px) {
+      width: 95%;
+      margin-top: 25px;
+    }
   }
 `;
 
@@ -208,6 +237,10 @@ const Holder = styled.div`
   /* align-items: center; */
   justify-content: space-between;
   /* background-color: gold; */
+
+  @media screen and (max-width: 900px) {
+    display: block;
+  }
 
   h3 {
     font-size: 49px;
@@ -248,6 +281,10 @@ const Container = styled.div`
   background-color: #f5f5f5;
   margin-bottom: 20px;
 
+  @media screen and (max-width: 900px) {
+    height: 980px;
+  }
+
   h2 {
     font-size: 130px;
     color: transparent;
@@ -256,6 +293,10 @@ const Container = styled.div`
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     margin-top: 20px;
+
+    @media screen and (max-width: 900px) {
+      font-size: 80px;
+    }
   }
 
   h4 {
@@ -264,5 +305,9 @@ const Container = styled.div`
     margin-left: 20px;
     font-size: 39px;
     margin: 0;
+
+    @media screen and (max-width: 900px) {
+      top: 6%;
+    }
   }
 `;

@@ -9,6 +9,7 @@ const Projects: React.FC<iProjects> = ({ title, image, desc }) => {
       </Image>
       <h5>{title}</h5>
       <p>{desc}</p>
+      {/* <span>See app</span> */}
     </Container>
   );
 };
@@ -32,6 +33,10 @@ const Container = styled.div`
   min-height: 550px;
   /* margin-bottom: 20px; */
 
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+
   h5 {
     font-size: 25px;
     margin: 0;
@@ -41,5 +46,9 @@ const Container = styled.div`
     width: 570px;
     font-size: 17px;
     color: darkgray;
+
+    @media screen and (max-width: 900px) {
+      width: 350px;
+    }
   }
 `;

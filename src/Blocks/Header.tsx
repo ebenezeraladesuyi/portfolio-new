@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { useState } from "react";
 import { Link } from "react-scroll";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const Header: React.FC = () => {
   const [change, setChange] = useState<boolean>(false);
@@ -44,6 +45,7 @@ const Header: React.FC = () => {
                 <nav>Contact</nav>
               </Link>
             </Right>
+            <Icon size={26} />
           </Wrapper>
         </Container>
       ) : (
@@ -72,6 +74,7 @@ const Header: React.FC = () => {
                 <nav>Contact</nav>
               </Link>
             </Right>
+            <Icon size={26} />
           </Wrapper>
         </Container>
       )}
@@ -80,6 +83,14 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+
+const Icon = styled(AiOutlineMenu)`
+  display: none;
+
+  @media screen and (max-width: 900px) {
+    display: block;
+  }
+`;
 
 const Left = styled.div`
   h2 {
@@ -90,6 +101,10 @@ const Right = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
 
   nav {
     font-size: 17px;
@@ -108,6 +123,11 @@ const Container = styled.div<{ bg: string }>`
   position: sticky;
   top: 0%;
   z-index: 5;
+
+  @media screen and (max-width: 900px) {
+    position: sticky;
+    top: 0%;
+  }
 `;
 const Wrapper = styled.div`
   width: 90%;

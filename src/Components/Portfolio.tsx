@@ -46,6 +46,10 @@ const Holding = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 900px) {
+    margin-top: 30px;
+  }
 `;
 
 const Container = styled.div`
@@ -56,6 +60,10 @@ const Container = styled.div`
   flex-direction: column;
   position: relative;
   margin-top: 60px;
+
+  @media screen and (max-width: 900px) {
+    margin-top: 25px;
+  }
   /* background-color: #f5f5f5; */
 
   h2 {
@@ -65,6 +73,10 @@ const Container = styled.div`
     text-transform: uppercase;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+
+    @media screen and (max-width: 900px) {
+      font-size: 65px;
+    }
   }
 
   h4 {
@@ -73,5 +85,10 @@ const Container = styled.div`
     margin-left: 20px;
     font-size: 39px;
     margin: 0;
+
+    @media screen and (max-width: 900px) {
+      top: 1.2%;
+      font-size: 29px;
+    }
   }
 `;

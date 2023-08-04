@@ -39,6 +39,11 @@ const Container = styled.div`
   padding: 40px;
   margin-bottom: 20px;
 
+  @media screen and (min-width: 700px) and (max-width: 1000px) {
+    justify-content: space-between;
+    width: 37%;
+  }
+
   h5 {
     font-size: 25px;
     margin: 0;

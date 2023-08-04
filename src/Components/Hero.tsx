@@ -49,6 +49,18 @@ const Right = styled.div`
   margin-left: 50px;
   margin-bottom: 90px;
   margin-top: 30px;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1000px) {
+    width: 80%;
+    height: 80%;
+  }
   img {
     width: 100%;
     height: 100%;
@@ -66,18 +78,38 @@ const Button = styled.button`
   font-size: 18px;
   margin-top: 25px;
   cursor: pointer;
+
+  @media screen and (max-width: 900px) {
+    width: 120px;
+    font-size: 14px;
+    height: 45px;
+  }
 `;
 
 const Left = styled.div`
   margin-top: 70px;
+
+  @media screen and (max-width: 900px) {
+    margin-top: 45px;
+  }
   h1 {
     font-size: 60px;
     /* color: transparent; */
+
+    @media screen and (max-width: 900px) {
+      font-size: 35px;
+    }
   }
   p {
     width: 500px;
     margin: 0;
     font-size: 19px;
+
+    @media screen and (max-width: 900px) {
+      font-size: 15px;
+      /* text-align: center; */
+      width: 300px;
+    }
   }
 `;
 
@@ -88,6 +120,13 @@ const Container = styled.div`
   display: flex;
   /* align-items: center; */
   justify-content: center;
+
+  @media screen and (max-width: 500px) {
+    height: 600px;
+  }
+  @media screen and (min-width: 700px) and (max-width: 1000px) {
+    height: 370px;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -95,5 +134,9 @@ const Wrapper = styled.div`
   display: flex;
 
   justify-content: space-between;
+
+  @media screen and (max-width: 500px) {
+    display: block;
+  }
   /* margin-top: 80px; */
 `;

@@ -64,6 +64,11 @@ const Holding = styled.div`
 const Holder = styled.div`
   margin-left: 60px;
 
+  @media screen and (max-width: 900px) {
+    margin: 0;
+    margin-left: 18px;
+  }
+
   h5 {
     margin: 0;
     font-size: 19px;
@@ -76,15 +81,32 @@ const Holder = styled.div`
 
 const Title = styled.div`
   margin-left: 60px;
+
+  @media screen and (max-width: 900px) {
+    margin-left: 18px;
+  }
 `;
 
 const Right = styled.div`
   /* margin-right: 60px; */
 
+  @media screen and (min-width: 700px) and (max-width: 1000px) {
+    margin-left: 20px;
+  }
+
   p {
     width: 600px;
     font-size: 18px;
     margin-left: 60px;
+
+    @media screen and (max-width: 900px) {
+      font-size: 16px;
+      width: 350px;
+      margin: 0;
+      margin-left: 18px;
+      margin-top: 20px;
+      /* text-align: center; */
+    }
   }
 
   h2 {
@@ -94,6 +116,16 @@ const Right = styled.div`
     text-transform: uppercase;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+
+    @media screen and (max-width: 500px) {
+      font-size: 100px;
+    }
+    @media screen and (min-width: 700px) and (max-width: 1000px) {
+      font-size: 80px;
+    }
+    /* @media screen and (min-width: 700px) and (max-width: 1000px) {
+      font-size: 190px;
+    } */
   }
 
   h4 {
@@ -102,10 +134,22 @@ const Right = styled.div`
     margin-left: 20px;
     font-size: 39px;
     margin: 0;
+
+    @media screen and (max-width: 500px) {
+      top: 49.5%;
+    }
+
+    @media screen and (min-width: 700px) and (max-width: 1000px) {
+      top: 10%;
+    }
   }
   h6 {
     margin: 0;
     font-size: 17px;
+
+    @media screen and (max-width: 900px) {
+      font-size: 15px;
+    }
   }
 `;
 
@@ -117,6 +161,20 @@ const Left = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 500px) {
+    width: 90%;
+    height: 300px;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1000px) {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    margin-left: 40px;
+    margin-top: 40px;
+  }
 `;
 const ImgHold = styled.div`
   width: 90%;
@@ -135,6 +193,12 @@ const Container = styled.div`
   margin-top: 40px;
   display: flex;
   position: relative;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   /* justify-content: space-between; */
   /* height: 00px; */
   /* background-color: red; */

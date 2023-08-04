@@ -37,6 +37,12 @@ const Wrapper = styled.div`
   h2 {
     margin: 0;
     font-size: 40px;
+
+    @media screen and (max-width: 900px) {
+      font-size: 30px;
+      width: 300px;
+      text-align: center;
+    }
   }
 
   button {
@@ -52,6 +58,11 @@ const Wrapper = styled.div`
     width: 500px;
     font-size: 20px;
     text-align: center;
+
+    @media screen and (max-width: 900px) {
+      width: 300px;
+      font-size: 16px;
+    }
   }
 `;
 
