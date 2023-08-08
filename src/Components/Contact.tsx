@@ -23,7 +23,7 @@ const Contact = () => {
   });
 
   const Submit = handleSubmit(async (res: any) => {
-    console.log(res);
+    // console.log(res);
   });
 
   return (

@@ -5,6 +5,11 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 const Header: React.FC = () => {
   const [change, setChange] = useState<boolean>(false);
+  const [show, setShow] = useState<boolean>(false);
+
+  const Toogle = () => {
+    setShow(!show);
+  };
 
   const ChangeToggle = () => {
     if (window.scrollY > 70) {
@@ -21,6 +26,61 @@ const Header: React.FC = () => {
           bg="rgba(255, 255, 255, 0.9)"
           style={{ backdropFilter: "10", WebkitBackdropFilter: "10px" }}
         >
+          {show ? (
+            <Drop hi="39vh">
+              <Link
+                to="home"
+                duration={500}
+                smooth={true}
+                offset={-50}
+                style={{ width: "100%" }}
+                onClick={Toogle}
+              >
+                <p style={{ marginTop: "40px" }}>Home</p>
+              </Link>
+
+              <Link
+                style={{ width: "100%" }}
+                to="about"
+                duration={500}
+                smooth={true}
+                offset={-50}
+                onClick={Toogle}
+              >
+                <p>About</p>
+              </Link>
+              <Link
+                style={{ width: "100%" }}
+                to="services"
+                duration={500}
+                smooth={true}
+                offset={-50}
+                onClick={Toogle}
+              >
+                <p>Services</p>
+              </Link>
+              <Link
+                style={{ width: "100%" }}
+                to="portfolio"
+                duration={500}
+                smooth={true}
+                offset={-50}
+                onClick={Toogle}
+              >
+                <p>Portfolio</p>
+              </Link>
+              <Link
+                style={{ width: "100%" }}
+                to="contact"
+                duration={500}
+                smooth={true}
+                offset={-50}
+                onClick={Toogle}
+              >
+                <p style={{ borderBottom: "none" }}>Contact</p>
+              </Link>
+            </Drop>
+          ) : null}
           <Wrapper>
             <Left>
               <h2>
@@ -45,11 +105,66 @@ const Header: React.FC = () => {
                 <nav>Contact</nav>
               </Link>
             </Right>
-            <Icon size={26} />
+            <Icon size={26} onClick={Toogle} />
           </Wrapper>
         </Container>
       ) : (
         <Container bg="#f5f5f5">
+          {show ? (
+            <Drop hi="47vh">
+              <Link
+                style={{ width: "100%" }}
+                to="home"
+                duration={500}
+                smooth={true}
+                offset={-50}
+                onClick={Toogle}
+              >
+                <p style={{ marginTop: "50px" }}>Home</p>
+              </Link>
+
+              <Link
+                style={{ width: "100%" }}
+                to="about"
+                duration={500}
+                smooth={true}
+                offset={-50}
+                onClick={Toogle}
+              >
+                <p>About</p>
+              </Link>
+              <Link
+                style={{ width: "100%" }}
+                to="services"
+                duration={500}
+                smooth={true}
+                offset={-50}
+                onClick={Toogle}
+              >
+                <p>Services</p>
+              </Link>
+              <Link
+                style={{ width: "100%" }}
+                to="portfolio"
+                duration={500}
+                smooth={true}
+                offset={-50}
+                onClick={Toogle}
+              >
+                <p>Portfolio</p>
+              </Link>
+              <Link
+                style={{ width: "100%" }}
+                to="contact"
+                duration={500}
+                smooth={true}
+                offset={-50}
+                onClick={Toogle}
+              >
+                <p style={{ borderBottom: "none" }}>Contact</p>
+              </Link>
+            </Drop>
+          ) : null}
           <Wrapper>
             <Left>
               <h2>
@@ -74,7 +189,7 @@ const Header: React.FC = () => {
                 <nav>Contact</nav>
               </Link>
             </Right>
-            <Icon size={26} />
+            <Icon size={26} onClick={Toogle} />
           </Wrapper>
         </Container>
       )}
@@ -83,6 +198,35 @@ const Header: React.FC = () => {
 };
 
 export default Header;
+
+const Drop = styled.div<{ hi: string }>`
+  display: none;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    height: ${({ hi }) => hi};
+    background-color: white;
+    position: absolute;
+    display: block;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+    font-size: 19px;
+  }
+`;
 
 const Icon = styled(AiOutlineMenu)`
   display: none;

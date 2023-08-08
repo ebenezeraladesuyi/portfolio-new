@@ -7,7 +7,7 @@ import {
   Portfolio,
   Services,
 } from "./Components";
-import Circle from "./common/Circle";
+import { Circle } from "./common";
 
 const App = () => {
   return (
