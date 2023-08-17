@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { iCard } from "../utils/interface";
 
-const Card: React.FC<iCard> = ({ title, desc, image }) => {
+const Card: React.FC<iCard> = ({ title, desc, image, an }) => {
   return (
-    <Container>
+    <Container an={an}>
       <Circle>
         <img src={image} alt="" />
       </Circle>
@@ -40,7 +40,7 @@ const Circle = styled.div`
   }
 `;
 
-const Container = styled.div`
+const Container = styled.div<{ an: string }>`
   width: 300px;
   min-height: 200px;
   background-color: white;
@@ -50,6 +50,22 @@ const Container = styled.div`
   flex-direction: column;
   padding: 40px;
   margin-bottom: 20px;
+  opacity: 0; /* Start with component hidden */
+  animation: ${({ an }) => an};
+
+  @keyframes bubbleEffect {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    70% {
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 
   @media screen and (min-width: 700px) and (max-width: 1000px) {
     justify-content: space-between;

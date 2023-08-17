@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import pics from "../assets/Finbarr.jpg";
 // import saveAs from "file-saver";
-import cv from "../assets/finbarrcv.pdf"
+import cv from "../assets/finbarrcv.pdf";
 
 const Hero = () => {
   return (
@@ -45,6 +45,19 @@ const Right = styled.div`
   margin-left: 50px;
   margin-bottom: 90px;
   margin-top: 30px;
+  opacity: 0;
+  animation: slideInFromRight 1s ease-in-out 0.5s forwards;
+
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      margin-left: 100%; /* Start position outside the right edge */
+    }
+    to {
+      opacity: 1;
+      margin-left: 50px; /* End position */
+    }
+  }
 
   @media screen and (max-width: 500px) {
     width: 100%;
@@ -84,6 +97,22 @@ const Button = styled.button`
 
 const Left = styled.div`
   margin-top: 70px;
+  opacity: 0;
+  transform: rotate(-45deg); /* Initial rotation */
+  animation: slideInAndRotate 1s ease-in-out 0.5s forwards;
+
+  @keyframes slideInAndRotate {
+    from {
+      opacity: 0;
+      margin-top: 70px; /* Start margin-top value */
+      transform: rotate(-45deg) translateY(100px); /* Start rotation and translation */
+    }
+    to {
+      opacity: 1;
+      margin-top: 70px; /* End margin-top value */
+      transform: rotate(0deg) translateY(0); /* End rotation and translation */
+    }
+  }
 
   @media screen and (max-width: 900px) {
     margin-top: 45px;
