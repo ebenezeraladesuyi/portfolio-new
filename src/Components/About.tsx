@@ -89,24 +89,6 @@ const Title = styled.div`
 
 const Right = styled.div`
   /* margin-right: 60px; */
-  opacity: 0;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  margin-right: -470px; /* Initial position outside the right edge */
-  animation-name: slideInFromRight;
-  animation-delay: 3s;
-
-  @keyframes slideInFromRight {
-    from {
-      opacity: 0;
-      margin-right: -470px; /* Start position outside the right edge */
-    }
-    to {
-      opacity: 1;
-      margin-right: 60px; /* End position */
-    }
-  }
 
   @media screen and (min-width: 700px) and (max-width: 1000px) {
     margin-left: 20px;
@@ -201,6 +183,8 @@ const Left = styled.div`
     width: 90%;
     height: 300px;
     margin: 0;
+    animation: none;
+    opacity: 1;
   }
 
   @media screen and (min-width: 700px) and (max-width: 1000px) {
