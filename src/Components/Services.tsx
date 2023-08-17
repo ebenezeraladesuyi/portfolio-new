@@ -1,5 +1,11 @@
 import styled from "styled-components";
 import { Card } from "../common";
+import pix from "../assets/fullstack.svg";
+import pix2 from "../assets/db.svg";
+import pix3 from "../assets/apis.svg";
+import pix5 from "../assets/new.svg";
+import pix4 from "../assets/working.svg";
+import pix6 from "../assets/design.svg";
 
 const Services = () => {
   return (
@@ -8,28 +14,34 @@ const Services = () => {
       <h4>What I Do?</h4>
       <Hold>
         <Card
+          image={pix}
           title="Full Stack Development"
           desc=" Harness the power of (MongoDB, Express.js, React.js, and Node.js) to build scalable and efficient web applications. From concept to execution, I cover every stage of development with utmost  creativity."
         />
         <Card
+          image={pix4}
           title="Frontend Development"
           desc="Leverage the potential of React.js to develop interactive and visually stunning user interfaces. I implement the best practices in frontend development to create responsive, mobile-friendly, and user-centric designs."
         />
         <Card
+          image={pix5}
           title="Backend Development"
           desc=" I excel in building scalable and secure backend systems using Node.js and Express.js. With a strong focus on performance and data integrity, I ensure your application runs smoothly even under heavy traffic.
 
 "
         />
         <Card
+          image={pix2}
           title="Database  Management"
           desc=" Harness the power of MongoDB's NoSQL database to handle large volumes of data efficiently. From database design to migration and maintenance, I guarantee optimal data organization and retrieval."
         />
         <Card
+          image={pix3}
           title="API Development"
           desc=" Enable seamless communication between your frontend and backend with robust RESTful APIs. I design and implement APIs that facilitate smooth data flow and integration with other services."
         />
         <Card
+          image={pix6}
           title="UI/UX"
           desc=" I use tools like Figma to create wireframes and interactive prototypes, allowing me to visualize and iterate on the design before starting the development phase. I have an eye to create appealing user interface."
         />

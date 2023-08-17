@@ -1,15 +1,9 @@
 import { styled } from "styled-components";
 import pics from "../assets/Finbarr.jpg";
-import saveAs from "file-saver";
+// import saveAs from "file-saver";
+import cv from "../assets/finbarrcv.pdf"
 
 const Hero = () => {
-  const handleDownload = () => {
-    const filename = "finbarrcv.docx";
-
-    const fileURL = process.env.PUBLIC_URL + "/" + filename;
-
-    saveAs(fileURL, filename);
-  };
   return (
     <Container id="home">
       <Wrapper>
@@ -30,7 +24,9 @@ const Hero = () => {
             A Professional Full stack Developer (MERN stack). Strong attention
             to small details.
           </p>
-          <Button onClick={handleDownload}>Download cv</Button>
+          <a href={cv} download="resume">
+            <Button>Download cv</Button>
+          </a>
         </Left>
         <Right>
           <img src={pics} alt="Finbarr's Image" />

@@ -1,5 +1,6 @@
 export interface iCard {
   title?: string;
+  image?: string;
   desc?: string;
 }
 

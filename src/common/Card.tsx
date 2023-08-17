@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import { iCard } from "../utils/interface";
 
-const Card: React.FC<iCard> = ({ title, desc }) => {
+const Card: React.FC<iCard> = ({ title, desc, image }) => {
   return (
     <Container>
-      <Circle></Circle>
+      <Circle>
+        <img src={image} alt="" />
+      </Circle>
       <h5>{title}</h5>
       <Line></Line>
       <p>{desc}</p>
@@ -26,6 +28,16 @@ const Circle = styled.div`
   height: 80px;
   background-color: #f5f5f5;
   border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+  }
 `;
 
 const Container = styled.div`

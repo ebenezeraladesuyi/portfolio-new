@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { iProjects } from "../utils/interface";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Projects: React.FC<iProjects> = ({ title, image, desc, link }) => {
   return (
@@ -11,12 +12,22 @@ const Projects: React.FC<iProjects> = ({ title, image, desc, link }) => {
         <h5>{title}</h5>
       </a>
       <p>{desc}</p>
-      {/* <span>See app</span> */}
+      <a href={link}>
+        <span>
+          See app
+          <Icon size={15} />
+        </span>
+      </a>
     </Container>
   );
 };
 
 export default Projects;
+
+const Icon = styled(AiOutlineArrowRight)`
+  margin-left: 8px;
+  margin-top: 6px;
+`;
 
 const Image = styled.div`
   width: 100%;
@@ -38,6 +49,13 @@ const Container = styled.div`
   a {
     text-decoration: none;
     color: black;
+
+    span {
+      color: #827ae0;
+      text-decoration: underline;
+      display: flex;
+      align-items: center;
+    }
   }
 
   @media screen and (max-width: 900px) {
