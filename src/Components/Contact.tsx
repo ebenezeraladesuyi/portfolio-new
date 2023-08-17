@@ -16,14 +16,9 @@ const Contact = () => {
 
   const {
     register,
-    handleSubmit,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
-  });
-
-  const Submit = handleSubmit(async (res: any) => {
-    // console.log(res);
   });
 
   return (
@@ -39,7 +34,7 @@ const Contact = () => {
           <h6>ogbonnafinbarr@gmail.com</h6>
           <h6>+234 80 875 1413</h6>
         </Left>
-        <Right onSubmit={Submit}>
+        <Right>
           <Card>
             <InpHold>
               <Holding>
