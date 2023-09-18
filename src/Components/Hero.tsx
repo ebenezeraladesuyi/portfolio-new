@@ -39,7 +39,7 @@ export default Hero;
 
 const Right = styled.div`
   width: 450px;
-  height: 570px;
+  height: 500px;
   /* background-color: gold; */
   margin-left: 50px;
   margin-bottom: 90px;
@@ -144,10 +144,11 @@ const Left = styled.div`
 const Container = styled.div`
   width: 100%;
   height: calc(100vh - 60px);
-  background-color: #f5f5f5;
+  // background-color: #f5f5f5;
   display: flex;
   /* align-items: center; */
   justify-content: center;
+  margin-top: 60px;
 
   @media screen and (max-width: 500px) {
     height: 600px;

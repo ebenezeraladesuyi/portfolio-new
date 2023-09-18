@@ -108,7 +108,7 @@ const Header: React.FC = () => {
           </Wrapper>
         </Container>
       ) : (
-        <Container bg="#f5f5f5">
+        <Container bg="white">
           {show ? (
             <Drop hi="47vh">
               <Link
@@ -266,7 +266,7 @@ const Container = styled.div<{ bg: string }>`
   align-items: center;
   justify-content: center;
   background-color: ${({ bg }) => bg};
-  position: sticky;
+  position: fixed;
   top: 0%;
   z-index: 5;
 
