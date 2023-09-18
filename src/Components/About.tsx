@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import pix from "../assets/Finbarr.jpg";
+import pix from "../assets/eben.jpg";
 
 const About = () => {
   return (
@@ -18,34 +18,38 @@ const About = () => {
             <span
               style={{
                 color: "transparent",
-                WebkitTextStroke: "1px #827ae0",
+                WebkitTextStroke: "1px #000000",
                 fontFamily: "sans-serif",
               }}
             >
-              Finbarr
+              Ebenezer
             </span>
           </h4>
-          <h6>I'm a Creative Designer and Full stack Developer.</h6>
+          <h6>A MERN-Stack Software Engineer.</h6>
         </Title>
         <p>
           A qualified FullStack Developer with holistic knowledge of software
-          design and development with over 2 years of experience. I have strong
+          design and development with over 3 years of experience. I have strong
           skills and ability to understand any applications life-cycle in depth
           and writing clean and efficient code. Collaborative team player with
           excellent technical abilities. Proficient in Javascript and Typescript
         </p>
         <Holder>
           <Holding>
-            <h5>Full Name:</h5>
-            <span>Ogbonna Finbarr Ihechukwu</span>
+            <h5>Education:</h5>
+            <span>Yaba College Of Technolgy, Lagos. (HND 2023)</span>
+          </Holding>
+          <Holding>
+            <h5>Certification:</h5>
+            <span>Aptech Computer College, Lagos  (2021)</span>
           </Holding>
           <Holding>
             <h5>Email:</h5>
-            <span>ogbonnafinbarr@gmail.com</span>
+            <span>ebenezeraladesuyi@gmail.com</span>
           </Holding>
           <Holding>
-            <h5>Phone no:</h5>
-            <span>08087514113</span>
+            <h5>Mobile:</h5>
+            <span>07036750857</span>
           </Holding>
         </Holder>
       </Right>
@@ -112,7 +116,8 @@ const Right = styled.div`
   h2 {
     font-size: 130px;
     color: transparent;
-    -webkit-text-stroke: 1px #f5f5f5;
+    // -webkit-text-stroke: 1px #f5f5f5;
+    -webkit-text-stroke: 1px lightgray;
     text-transform: uppercase;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;

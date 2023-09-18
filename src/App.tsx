@@ -11,13 +11,13 @@ import { Circle } from "./common";
 
 const App = () => {
   return (
-    <div>
+    <div style={{overflow:"hidden"}}>
       <Header />
       <Hero />
       <Circle />
       <About />
-      <Services />
       <Portfolio />
+      <Services />
       <Contact />
       <Intrested />
       <Footer />

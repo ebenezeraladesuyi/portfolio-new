@@ -24,15 +24,15 @@ const Contact = () => {
   return (
     <Container id="contact">
       <h2>Contact</h2>
-      <h4>Reach Me...</h4>
+      <h4>Reach Out..</h4>
       <Holder>
         <Left>
           <h3>
             <span>Lagos</span>, Nigeria
           </h3>
-          <p>34,Labaka Street, Amukoko</p>
-          <h6>ogbonnafinbarr@gmail.com</h6>
-          <h6>+234 80 875 1413</h6>
+          <p>12, Dele Balogun Street, Akute</p>
+          <h6>ebenezeraladesuyi@gmail.com</h6>
+          <h6>+234 70 3675 0857, +234 70 4747 8754</h6>
         </Left>
         <Right>
           <Card>

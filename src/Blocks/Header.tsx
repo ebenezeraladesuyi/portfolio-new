@@ -84,8 +84,7 @@ const Header: React.FC = () => {
           <Wrapper>
             <Left>
               <h2>
-                <span style={{ fontFamily: "'Yellowtail', cursive" }}>F</span>
-                inbarr
+                <span style={{ fontFamily: "'Yellowtail', cursive" }}>Ebenezer</span>
               </h2>
             </Left>
             <Right>
@@ -168,8 +167,7 @@ const Header: React.FC = () => {
           <Wrapper>
             <Left>
               <h2>
-                <span style={{ fontFamily: "'Yellowtail', cursive" }}>F</span>
-                inbarr
+                <span style={{ fontFamily: "'Yellowtail', cursive" }}>Ebenezer</span>
               </h2>
             </Left>
             <Right>
@@ -225,6 +223,7 @@ const Drop = styled.div<{ hi: string }>`
     justify-content: center;
     border-bottom: 1px solid lightgray;
     font-size: 19px;
+    color: #827ae0;
   }
 `;
 
@@ -239,6 +238,7 @@ const Icon = styled(AiOutlineMenu)`
 const Left = styled.div`
   h2 {
     font-size: 35px;
+    color: #827ae0;
   }
 `;
 const Right = styled.div`
@@ -254,6 +254,8 @@ const Right = styled.div`
     font-size: 17px;
     margin: 10px;
     cursor: pointer;
+    color: #827ae0;
+    font-weight: 700;
   }
 `;
 

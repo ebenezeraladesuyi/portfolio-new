@@ -9,7 +9,7 @@ const Portfolio = () => {
   return (
     <Container id="portfolio">
       <h2>Portfolio</h2>
-      <h4>Awesome Works</h4>
+      <h4>Awesome Projects</h4>
       <Holding>
         <Projects
           title="Mavericks- Platform for selling GiftCards"

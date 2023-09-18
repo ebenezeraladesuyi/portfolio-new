@@ -7,19 +7,19 @@ const Footer = () => {
   return (
     <Container>
       <Hold>
-        <a href="https://github.com/Finbarr12">
+        <a href="https://github.com/ebenezeraladesuyi">
           <AiFillGithub size={25} style={{ marginRight: "20px" }} />
         </a>
-        <a href="https://www.linkedin.com/in/finbarr-ihechukwu-661523253/">
+        <a href="https://www.linkedin.com/in/aladesuyi-ebenezer-b49931208/">
           <AiFillLinkedin size={25} style={{ marginRight: "20px" }} />
         </a>
-        <a href="https://www.facebook.com/finbizz.davinci">
+        <a href="https://www.facebook.com/ebenezeraladesuyi">
           <BsFacebook size={25} />
         </a>
       </Hold>
       <p>
         {" "}
-        &copy; {new Date().getFullYear()} Finbarr. Designed by Ogbonna Finbarr
+        &copy; {new Date().getFullYear()} Ebenezer. Designed by Ebenezer Aladesuyi
       </p>
     </Container>
   );
@@ -49,5 +49,6 @@ const Container = styled.div`
     margin-top: 0;
     display: flex;
     align-items: center;
+    font-weight: 700;
   }
 `;

@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
-import pics from "../assets/Finbarr.jpg";
+import pics from "../assets/eben3.png";
 // import saveAs from "file-saver";
-import cv from "../assets/finbarrcv.pdf";
+import cv from "../assets/CV-Eben.pdf";
 
 const Hero = () => {
   return (
@@ -16,13 +16,12 @@ const Hero = () => {
                 WebkitTextStroke: "1.5px #827ae0",
               }}
             >
-              Hello
+              Hi,
             </span>{" "}
-            I'm <br /> Ogbonna Finbarr
+            I'm <br /> Ebenezer Aladesuyi
           </h1>
           <p>
-            A Professional Full stack Developer (MERN stack). Strong attention
-            to small details.
+            <span style={{fontWeight:"700"}}>A Full-Stack(MERN-Stack) Engineer.</span> <br/> A versatile, diligent, optimistic, innovative, team player and highly motivated graduate.
           </p>
           <a href={cv} download="resume">
             <Button>Download cv</Button>
@@ -40,13 +39,15 @@ export default Hero;
 
 const Right = styled.div`
   width: 450px;
-  height: 480px;
+  height: 570px;
   /* background-color: gold; */
   margin-left: 50px;
   margin-bottom: 90px;
   margin-top: 30px;
   opacity: 0;
   animation: slideInFromRight 1s ease-in-out 0.5s forwards;
+  margin-bottom: 20px;
+  overflow: hidden;
 
   @keyframes slideInFromRight {
     from {
@@ -130,10 +131,10 @@ const Left = styled.div`
   p {
     width: 500px;
     margin: 0;
-    font-size: 19px;
+    font-size: 17px;
 
     @media screen and (max-width: 900px) {
-      font-size: 15px;
+      font-size: 13px;
       /* text-align: center; */
       width: 300px;
     }

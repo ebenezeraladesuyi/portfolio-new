@@ -4,13 +4,12 @@ const Intrested = () => {
   return (
     <Container>
       <Wrapper>
-        <h2>Interested to Work With Me?</h2>
+        <h2>Wanna Work With Me?</h2>
         <p>
-          Challenge me before wasting your valuable time. I want to work with
-          you to create the really cool stuff.
+          I'm open to working on great projects. <br/> <br/>LET'S DO THIS
         </p>
         <a
-          href="https://wa.me/2348087514113"
+          href="https://wa.me/2347036750857"
           style={{ color: "white", textDecoration: "none" }}
         >
           {" "}
@@ -58,6 +57,7 @@ const Wrapper = styled.div`
     width: 500px;
     font-size: 20px;
     text-align: center;
+    font-weight: 700;
 
     @media screen and (max-width: 500px) {
       width: 300px;
