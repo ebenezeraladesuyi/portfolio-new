@@ -84,7 +84,7 @@ const Header: React.FC = () => {
           <Wrapper>
             <Left>
               <h2>
-                <span style={{ fontFamily: "'Yellowtail', cursive" }}>Ebenezer</span>
+                <span style={{ fontFamily: "'Yellowtail', cursive" }}>Eben.</span>
               </h2>
             </Left>
             <Right>
@@ -167,7 +167,7 @@ const Header: React.FC = () => {
           <Wrapper>
             <Left>
               <h2>
-                <span style={{ fontFamily: "'Yellowtail', cursive" }}>Ebenezer</span>
+                <span style={{ fontFamily: "'Yellowtail', cursive" }}>Eben.</span>
               </h2>
             </Left>
             <Right>
