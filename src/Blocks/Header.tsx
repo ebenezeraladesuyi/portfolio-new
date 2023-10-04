@@ -84,7 +84,7 @@ const Header: React.FC = () => {
           <Wrapper>
             <Left>
               <h2>
-                <span style={{ fontFamily: "'Yellowtail', cursive" }}>Eben.</span>
+                <span>Eben.</span>
               </h2>
             </Left>
             <Right>
@@ -167,7 +167,7 @@ const Header: React.FC = () => {
           <Wrapper>
             <Left>
               <h2>
-                <span style={{ fontFamily: "'Yellowtail', cursive" }}>Eben.</span>
+                <span >Eben.</span>
               </h2>
             </Left>
             <Right>
@@ -239,6 +239,10 @@ const Left = styled.div`
   h2 {
     font-size: 35px;
     color: #827ae0;
+
+    @media screen and (max-width: 375px) {
+      font-size: 24px;
+    }
   }
 `;
 const Right = styled.div`

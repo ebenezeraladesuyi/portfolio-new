@@ -13,19 +13,19 @@ const About = () => {
         <Title>
           {" "}
           <h2>About</h2>
-          <h4>
+          {/* <h4>
             I'm{" "}
             <span
               style={{
                 color: "transparent",
-                WebkitTextStroke: "1px #000000",
+                WebkitTextStroke: "1px white",
                 fontFamily: "sans-serif",
               }}
             >
               Ebenezer
             </span>
-          </h4>
-          <h6>A MERN-Stack Software Engineer.</h6>
+          </h4> */}
+          <h6 style={{color:"#827ae0"}}>A MERN-Stack Software Engineer.</h6>
         </Title>
         <p>
           A qualified FullStack Developer with holistic knowledge of software
@@ -75,11 +75,17 @@ const Holder = styled.div`
 
   h5 {
     margin: 0;
-    font-size: 19px;
+    font-size: 14px;
+    color: #827ae0;
   }
+
   span {
-    font-size: 18px;
+    font-size: 13px;
     margin-left: 10px;
+
+    @media-screen and (max-width: 500px) {
+      font-size: 11px;
+    }
   }
 `;
 
@@ -98,6 +104,13 @@ const Right = styled.div`
     margin-left: 20px;
   }
 
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   p {
     width: 600px;
     font-size: 18px;
@@ -105,11 +118,11 @@ const Right = styled.div`
 
     @media screen and (max-width: 900px) {
       font-size: 16px;
-      width: 350px;
+      width: 300px;
       margin: 0;
-      margin-left: 18px;
+      // margin-left: 18px;
       margin-top: 20px;
-      /* text-align: center; */
+      text-align: center; 
     }
   }
 
@@ -123,25 +136,24 @@ const Right = styled.div`
     margin: 0;
 
     @media screen and (max-width: 500px) {
-      font-size: 100px;
+      font-size: 70px;
+      text-align: center;
+      margin-left: -15px;
     }
     @media screen and (min-width: 700px) and (max-width: 1000px) {
       font-size: 80px;
     }
-    /* @media screen and (min-width: 700px) and (max-width: 1000px) {
-      font-size: 190px;
-    } */
   }
 
   h4 {
     position: absolute;
     top: 15%;
     margin-left: 20px;
-    font-size: 39px;
+    font-size: 27px;
     margin: 0;
 
     @media screen and (max-width: 500px) {
-      top: 49.5%;
+      top: 39.5%;
     }
 
     @media screen and (min-width: 700px) and (max-width: 1000px) {
@@ -161,7 +173,7 @@ const Right = styled.div`
 const Left = styled.div`
   width: 470px;
   height: 470px;
-  border: 1px solid #827ae0;
+  border: 2px solid #827ae0;
   margin-left: 60px;
   display: flex;
   align-items: center;
@@ -213,10 +225,13 @@ const ImgHold = styled.div`
 
 const Container = styled.div`
   width: 100%;
-  margin-bottom: 20px;
-  margin-top: 40px;
   display: flex;
   position: relative;
+  background-color: #150E28;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow:hidden;
+  color: white;
 
   @media screen and (max-width: 500px) {
     flex-direction: column;

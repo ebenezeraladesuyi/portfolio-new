@@ -26,8 +26,7 @@ const Wrapper = styled.div`
   width: 90%;
   height: 280px;
   margin-bottom: 10px;
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  box-shadow: 0 0 3px white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,7 +60,7 @@ const Wrapper = styled.div`
 
     @media screen and (max-width: 500px) {
       width: 300px;
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 `;
@@ -71,5 +70,8 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 60px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #150E28;
+  color: white;
 `;

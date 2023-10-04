@@ -44,11 +44,17 @@ const Image = styled.div`
 const Container = styled.div`
   width: 48.7%;
   min-height: 550px;
-  /* margin-bottom: 20px; */
+  margin-bottom: 20px;
 
   a {
     text-decoration: none;
     color: black;
+
+    @media screen and (max-width: 500px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     span {
       color: #827ae0;
@@ -66,7 +72,13 @@ const Container = styled.div`
     font-size: 25px;
     margin: 0;
     margin-top: 10px;
+    color: #827ae0;
+
+    @media screen and (max-width: 500px) {
+      text-align: center;
+    }
   }
+
   p {
     width: 570px;
     font-size: 17px;
@@ -74,7 +86,13 @@ const Container = styled.div`
 
     @media screen and (max-width: 500px) {
       width: 350px;
+      text-align: center;
     }
+
+    @media screen and (max-width: 400px) {
+      width: 280px;
+    }
+
     @media screen and (min-width: 700px) and (max-width: 1000px) {
       width: 700px;
     }

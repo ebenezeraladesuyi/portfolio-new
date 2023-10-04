@@ -63,12 +63,10 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   position: relative;
-  margin-top: 60px;
-
-  @media screen and (max-width: 900px) {
-    margin-top: 25px;
-  }
-  /* background-color: #f5f5f5; */
+  background-color: #150E28;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: white;
 
   h2 {
     font-size: 130px;
@@ -79,7 +77,7 @@ const Container = styled.div`
     margin: 0;
 
     @media screen and (max-width: 900px) {
-      font-size: 65px;
+      font-size: 50px;
     }
   }
 
@@ -89,10 +87,11 @@ const Container = styled.div`
     margin-left: 20px;
     font-size: 39px;
     margin: 0;
+    color: #827ae0;
 
-    @media screen and (max-width: 900px) {
-      top: 1.2%;
-      font-size: 29px;
+    @media screen and (max-width: 700px) {
+      top: 1.0%;
+      font-size: 20px;
     }
   }
 `;

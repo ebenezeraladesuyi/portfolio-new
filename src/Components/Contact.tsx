@@ -47,7 +47,7 @@ const Contact = () => {
                 <p>
                   {errors?.name?.message ? (
                     <AiFillWarning
-                      style={{ color: "red", marginRight: "6px" }}
+                      style={{ color: "red", marginRight: "15px" }}
                     />
                   ) : null}
                   {errors?.name?.message}
@@ -64,7 +64,7 @@ const Contact = () => {
                 <p>
                   {errors?.email?.message ? (
                     <AiFillWarning
-                      style={{ color: "red", marginRight: "6px" }}
+                      style={{ color: "red",  }}
                     />
                   ) : null}
                   {errors?.email?.message}
@@ -148,8 +148,14 @@ const Buthold = styled.div`
   width: 90%;
   margin-top: 20px;
 
+  @media screen and (max-width: 500px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   button {
-    width: 120px;
+    width: 130px;
     height: 45px;
     border-radius: 30px;
     font-size: 16px;
@@ -245,6 +251,9 @@ const Holder = styled.div`
     span {
       color: #827ae0;
     }
+    @media screen and (max-width: 500px) {
+      font-size: 37px;
+    }
   }
 `;
 
@@ -253,32 +262,41 @@ const Left = styled.div`
   p {
     margin: 0;
     font-size: 29px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 500px) {
+      font-size: 20px;
+    }
   }
   h6 {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 27px;
     font-weight: lighter;
+
+    @media screen and (max-width: 500px) {
+      font-size: 18px;
+    }
   }
 `;
 
 const Container = styled.div`
   width: 100%;
-  height: 680px;
+  // height: 680px;
   display: flex;
   align-items: center;
   /* justify-content: center; */
   flex-direction: column;
-  margin-top: 60px;
+  background-color: #150E28;
+  // padding-top: 40px;
+  padding-bottom: 40px;
+  color: white;
   position: relative;
 
-  background-color: #f5f5f5;
-  margin-bottom: 20px;
 
-  @media screen and (max-width: 900px) {
-    height: 980px;
-  }
+  // @media screen and (max-width: 900px) {
+  //   height: 980px;
+  // }
 
   h2 {
     font-size: 130px;
@@ -290,7 +308,7 @@ const Container = styled.div`
     margin-top: 20px;
 
     @media screen and (max-width: 900px) {
-      font-size: 80px;
+      font-size: 55px;
     }
   }
 
@@ -300,9 +318,11 @@ const Container = styled.div`
     margin-left: 20px;
     font-size: 39px;
     margin: 0;
+    color: #827ae0;
 
     @media screen and (max-width: 900px) {
-      top: 6%;
+      top: 1%;
+      font-size:22px;
     }
   }
 `;
