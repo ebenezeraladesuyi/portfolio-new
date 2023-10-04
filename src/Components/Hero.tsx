@@ -76,7 +76,7 @@ bottom: 80px;
 right: 60px;
 
 @media screen and (max-width: 500px) {
-  bottom: -10px;
+  bottom: 0px;
   right: 45px;
 }
 `;
@@ -90,7 +90,7 @@ bottom: 70px;
 right: 40px;
 
 @media screen and (max-width: 500px) {
-  bottom: 0px;
+  bottom: 10px;
   right: 30px;
 }
 `;
@@ -104,7 +104,7 @@ top: 100px;
 right: 60px;
 
 @media screen and (max-width: 500px) {
-  top: 330px;
+  top: 290px;
   right: 45px;
 }
 `;
@@ -169,7 +169,7 @@ top: 90px;
 right: 40px;
 
 @media screen and (max-width: 500px) {
-  top: 340px;
+  top: 300px;
   right: 30px;
 }
 `;
@@ -203,7 +203,7 @@ position: relative;
   @media screen and (max-width: 500px) {
     width: 250px;
     height: 250px;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 30px;
     animation: none;
     opacity: 1;
@@ -343,6 +343,6 @@ const Wrapper = styled.div`
 
   @media screen and (max-width: 500px) {
     display: block;
+    margin-top: 80px;
   }
-  /* margin-top: 80px; */
 `;

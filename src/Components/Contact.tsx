@@ -47,7 +47,7 @@ const Contact = () => {
                 <p>
                   {errors?.name?.message ? (
                     <AiFillWarning
-                      style={{ color: "red", marginRight: "15px" }}
+                      style={{ color: "red", marginRight: "6px" }}
                     />
                   ) : null}
                   {errors?.name?.message}
@@ -64,7 +64,7 @@ const Contact = () => {
                 <p>
                   {errors?.email?.message ? (
                     <AiFillWarning
-                      style={{ color: "red",  }}
+                      style={{ color: "red", marginRight: "6px" }}
                     />
                   ) : null}
                   {errors?.email?.message}

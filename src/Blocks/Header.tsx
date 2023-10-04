@@ -275,7 +275,7 @@ const Container = styled.div<{ bg: string }>`
   z-index: 5;
 
   @media screen and (max-width: 900px) {
-    position: sticky;
+    // position: sticky;
     top: 0%;
   }
 `;

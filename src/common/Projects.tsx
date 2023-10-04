@@ -50,11 +50,11 @@ const Container = styled.div`
     text-decoration: none;
     color: black;
 
-    @media screen and (max-width: 500px) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    // @media screen and (max-width: 500px) {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    // }
 
     span {
       color: #827ae0;
@@ -75,7 +75,8 @@ const Container = styled.div`
     color: #827ae0;
 
     @media screen and (max-width: 500px) {
-      text-align: center;
+      // text-align: center;
+      font-size: 20px;
     }
   }
 
@@ -86,7 +87,7 @@ const Container = styled.div`
 
     @media screen and (max-width: 500px) {
       width: 350px;
-      text-align: center;
+      // text-align: center;
     }
 
     @media screen and (max-width: 400px) {
